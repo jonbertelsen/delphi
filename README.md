@@ -3,10 +3,9 @@
 Følgende er et forslag til en basis-opsætning af et JPA projekt, der bruger Hibernate. 
 I eksemplet er medtaget en enkelt entitet `Study`, der repræsenterer en Delphi-evaluering (a Delphi Study).
 
-Når du skal opsætte et tilsvarende projekt, kan du evt. følge disse vejledninger:
+Når du skal opsætte et tilsvarende projekt, kan du evt. følge denne vejledning:
 
-1. [JPA Setup ](https://3sem.kursusmaterialer.dk/toolbox/java/orm/jpa-setup/)
-2. [JPA Basics]()
+- [JPA Setup ](https://3sem.kursusmaterialer.dk/toolbox/java/orm/jpa-setup/)
 
 Nedenfor er en kort oversigt over de vigtigste mapper og filer i projektet. Udeladt: `.idea`, `.mvn`, `docs`.
 

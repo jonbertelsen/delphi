@@ -15,7 +15,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        IDAO studyDAO = new StudyDAO(emf);
+        IDAO<Study, Integer> studyDAO = new StudyDAO(emf);
 
         try (EntityManager em = emf.createEntityManager()) {
             em.getTransaction().begin();

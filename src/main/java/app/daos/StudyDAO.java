@@ -11,7 +11,7 @@ import java.util.List;
 
 public class StudyDAO implements IDAO<Study, Integer>{
 
-    private EntityManagerFactory emf;
+    private final EntityManagerFactory emf;
 
     public StudyDAO(EntityManagerFactory emf) {
         this.emf = emf;
