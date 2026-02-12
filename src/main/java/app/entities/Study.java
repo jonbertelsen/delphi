@@ -20,8 +20,9 @@ public class Study {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
     private Integer id;
-
+    
     private String title;
+
     private int teacherId;
     private LocalDate studyDate;
 

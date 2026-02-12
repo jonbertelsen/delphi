@@ -25,7 +25,7 @@ public class StudyDAO implements IDAO<Study, Integer>{
         try (EntityManager em = emf.createEntityManager()) {
             em.getTransaction().begin();
             try {
-                em.persist(study);
+               em.persist(study);
                 em.getTransaction().commit();
             } catch (PersistenceException e) {
                 if (em.getTransaction().isActive()) {

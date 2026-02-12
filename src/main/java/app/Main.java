@@ -17,9 +17,6 @@ public class Main {
 
         IDAO<Study, Integer> studyDAO = new StudyDAO(emf);
 
-        try (EntityManager em = emf.createEntityManager()) {
-            em.getTransaction().begin();
-
                 Study study1 = studyDAO.create(new Study("Intro to JPA", 101, LocalDate.now().plusDays(1)));
                 Study study2 = studyDAO.create(new Study("Hibernate Basics", 102, LocalDate.now().plusDays(2)));
                 Study study3 = studyDAO.create(new Study("Entity Manager Deep Dive", 103, LocalDate.now().plusDays(3)));
@@ -27,9 +24,6 @@ public class Main {
                 System.out.println(study1);
                 System.out.println(study2);
                 System.out.println(study3);
-
-            em.getTransaction().commit();
-        }
 
         // Close the database connection:
         emf.close();
